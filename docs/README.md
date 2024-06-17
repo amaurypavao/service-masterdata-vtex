@@ -22,7 +22,7 @@ You must config the `.env` file with your credentials.
 
 This app receives a http request from the trigger, so you need to configure this as a PATCH and the endpoint is
 ``
-https://{{accountName}}.myvtex.com/_v/masterdata/{{entityacronym}}/>
+https://{{accountName}}.myvtex.com/_v/masterdata/{{entityacronym}}/
 ``
 
 The request body must be
