@@ -14,11 +14,17 @@ This mean you can:
 ## Installation
 
 We recommend you first link this app to a dev workspace to test. You can use the postman or another API tool.
+![image](https://github.com/amaurypavao/service-masterdata-vtex/assets/94199726/22873629-9876-4be4-9605-9ab5a27b14b1)
+
 Then, proceeed to production environment.
 
 You must config the `.env` file with your credentials.
 
 ## Using this app
+
+You first create a rule that will trigger the request
+
+![image](https://github.com/amaurypavao/service-masterdata-vtex/assets/94199726/e949016c-103a-4a81-b8e9-76d1a5796f56)
 
 This app receives a http request from the trigger, so you need to configure this as a PATCH and the endpoint is
 ``
@@ -35,3 +41,5 @@ The request body must be
   }
 }
 ```
+![image](https://github.com/amaurypavao/service-masterdata-vtex/assets/94199726/cc6d8f67-c4f5-4d2c-8dca-567c182fa5be)
+
