@@ -16,6 +16,8 @@ This mean you can:
 We recommend you first link this app to a dev workspace to test. You can use the postman or another API tool.
 Then, proceeed to production environment.
 
+You must config the `.env` file with your credentials.
+
 ## Using this app
 
 This app receives a http request from the trigger, so you need to configure this as a PATCH and the endpoint is
