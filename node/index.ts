@@ -2,7 +2,6 @@ import type { ClientsConfig, ServiceContext, RecorderState } from '@vtex/api'
 import { LRUCache, method, Service } from '@vtex/api'
 
 import { Clients } from './clients'
-//import { handleGetCL } from './middlewares/handleGetCL'
 import { handleUpdateCL } from './middlewares/handleUpdateCL'
 
 const TIMEOUT_MS = 800
@@ -48,9 +47,6 @@ declare global {
 export default new Service({
   clients,
   routes: {
-   /*  getOrders: method({
-      GET: [handleGetCL],
-    }), */
     updateEntity: method({
       PATCH: [handleUpdateCL],
     }),
