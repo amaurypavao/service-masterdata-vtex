@@ -43,3 +43,5 @@ The request body must be
 ```
 ![image](https://github.com/amaurypavao/service-masterdata-vtex/assets/94199726/cc6d8f67-c4f5-4d2c-8dca-567c182fa5be)
 
+**Be aware of your trigger rules, because it can put a loop on the process**
+
