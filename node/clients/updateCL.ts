@@ -7,16 +7,14 @@ class UpdateEntity extends ExternalClient {
       ...options,
       headers: {
         ...options?.headers,
-      //  VtexIdclientAutCookie: context.authToken,
-        
-        X-VTEX-API-AppToken: process.env.AppToken,
-        X-VTEX-API-AppKey: process.env.AppKey
+        // VtexIdclientAutCookie: context.authToken,
+        'X-VTEX-API-AppToken': process.env.AppToken || '',
+        'X-VTEX-API-AppKey': process.env.AppKey || ''
       },
     })
   }
 
   public async updateEntity(entity: string, id: string, updateData: any): Promise<any> {
-    console.log(entity, id, updateData)
     return this.http.patch(
       `/api/dataentities/${entity}/documents/${id}`, updateData
     )

@@ -1,13 +1,10 @@
-import { IOClients } from '@vtex/api'
-
 import { UpdateEntity } from './updateCL'
+import { IOClients } from '@vtex/api' // Certifique-se de importar o IOClients
 
-// Extend the default IOClients implementation with our own custom clients.
-export class Clients extends IOClients {
-  public get UpdateEntity() {
-    return this.getOrSet('UpdateEntity', UpdateEntity)
+class Clients extends IOClients {
+  public get updateEntity() {
+    return this.getOrSet('updateEntity', UpdateEntity)
   }
 }
 
-
-
+export { Clients }
