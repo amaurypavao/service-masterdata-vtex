@@ -18,8 +18,6 @@ We recommend you first link this app to a dev workspace to test. You can use the
 
 Then, proceeed to production environment.
 
-You must config the `.env` file with your credentials.
-
 ## Using this app
 
 You first create a rule that will trigger the request
