@@ -7,9 +7,7 @@ class UpdateEntity extends ExternalClient {
       ...options,
       headers: {
         ...options?.headers,
-        // VtexIdclientAutCookie: context.authToken,
-        'X-VTEX-API-AppToken': process.env.AppToken || '',
-        'X-VTEX-API-AppKey': process.env.AppKey || ''
+       VtexIdclientAutCookie: context.authToken,
       },
     })
   }
